@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+/* ---------------- Root Theme ---------------- */
+
+:root {
+  --background: #110720;
+  --foreground: #ffffff;
+  --font-sans: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* ---------------- Base Reset ---------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------- Animations ---------------- */
+
+@layer utilities {
+
+  /* Hero text */
+  @keyframes roleFade {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-role-fade {
+    animation: roleFade 0.4s ease-out;
+  }
+
+  /* Cursor */
+  @keyframes cursorPulse {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .animate-cursor-pulse {
+    animation: cursorPulse 1.2s infinite;
+  }
+
+  /* Skill bubble pop */
+  @keyframes skill-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.75) translateY(6px);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-skill-pop {
+    animation: skill-pop 0.6s cubic-bezier(0.18, 1, 0.36, 1) both;
+  }
+
+  /* Fade up (used in leadership / skills) */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out both;
+  }
+
+  /* ---------------- Tool Marquee ---------------- */
+
+  @layer utilities {
+  @keyframes tool-marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-tool-marquee {
+    animation: tool-marquee 45s linear infinite;
+    will-change: transform;
+  }
+}
+}
+
+
+/* this is for the banner image  */
+
+/* ---------- Banner Animations ---------- */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes ping-slow {
+  0% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.05); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+
+@keyframes ping-slower {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.08); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-very-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Utilities */
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-float-delayed { animation: float-delayed 4s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 5s ease-in-out infinite; }
+.animate-ping-slow { animation: ping-slow 4s cubic-bezier(0,0,0.2,1) infinite; }
+.animate-ping-slower { animation: ping-slower 6s cubic-bezier(0,0,0.2,1) infinite; }
+.animate-spin-slow { animation: spin-slow 8s linear infinite; }
+.animate-spin-very-slow { animation: spin-very-slow 20s linear infinite; }
+.animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
+.animate-blink { animation: blink 1s step-end infinite; }
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
