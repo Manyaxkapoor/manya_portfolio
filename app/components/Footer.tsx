@@ -109,7 +109,7 @@ export default function Footer(): React.JSX.Element {
         {/* Bottom */}
         <div className="text-center pt-8 border-t border-white/10">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Manya Kapoor  
+            © {new Date().getFullYear()} Manya Kapoor • Awaken Create Disrupt Heal • 
           </p>
         </div>
       </div>

@@ -58,6 +58,18 @@ const featuredProjects: Project[] = [
     tech: ["AI Governance", "SHAP", "FastAPI", "RBAC", "Audit Trails"],
      imagePosition: "15% 65%",
   },
+
+  // {
+//     id: 5,
+//     title: "HireLens – Explainable Resume Screening Platform",
+//     description:
+//       "A full-stack resume screening platform focused on transparency in AI-driven hiring, featuring secure authentication, explainable decisions, and structured profile management.",
+//     github: "https://github.com/Manyaxkapoor/HireLens",
+//     image: "/projects/project-2.png",
+//     imagePosition: "15% 65%",
+//     tech: ["React", "Node.js", "PostgreSQL", "Explainable AI", "RBAC"],
+//   },
+
 ];
 
 export default function Projects() {
