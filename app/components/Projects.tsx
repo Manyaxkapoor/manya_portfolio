@@ -171,7 +171,9 @@ export default function Projects() {
 
                   {/* Description Card with Glow */}
                   <div
-                    ref={(el) => (glowRefs.current[project.id] = el)}
+                    ref={(el) => {
+  glowRefs.current[project.id] = el;
+}}
                     className={`relative rounded-2xl p-6 lg:p-8
                     bg-gradient-to-br from-white/5 to-white/[0.02]
                     border border-white/10 backdrop-blur-sm
