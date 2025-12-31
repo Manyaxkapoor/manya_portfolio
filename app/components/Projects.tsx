@@ -45,7 +45,7 @@ const featuredProjects: Project[] = [
     tech: ["React", "Tailwind CSS", "Supabase", "PostgreSQL", "Figma"],
     live: "https://devconnect456.vercel.app",
     github: "https://github.com/Manyaxkapoor/devconnect",
-    image: "/projects/project-3.png",
+    image: "/Projects/project-3.png",
      imagePosition: "15% 60%",
   },
   {
@@ -54,9 +54,9 @@ const featuredProjects: Project[] = [
     description:
       "An AI governance platform enabling auditable, regulation-ready workflows with consent management, explainability middleware, and immutable audit trails.",
     github: "https://github.com/Manyaxkapoor/TRUView-AI",
-    image: "/projects/project-4.png",
+    image: "/Projects/project-4.png",
     tech: ["AI Governance", "SHAP", "FastAPI", "RBAC", "Audit Trails"],
-     imagePosition: "15% 65%",
+     imagePosition: "5% 5%",
   },
 
   // {
