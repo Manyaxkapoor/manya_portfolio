@@ -227,7 +227,7 @@ export default function Banner() {
 
           <div className="pt-4">
             <a
-              href="https://drive.google.com/file/d/1eNGejjCbPd5esdhR_gmem9ibk6O9kubs/view?usp=sharing"
+              href="https://drive.google.com/file/d/14MwCzFSLdDpi7PW774fLn_g0SqvkIjOW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 transition-all duration-300 text-white font-medium shadow-lg shadow-purple-900/30 hover:shadow-purple-900/50 hover:scale-105 group"
