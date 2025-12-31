@@ -151,7 +151,7 @@ export default function Banner() {
                 transition: "transform 0.2s ease-out",
               }}
             >
-              {/* glow / rings — UNCHANGED */}
+              {/* glow / rings —  */}
               <div className="absolute w-[380px] h-[380px] rounded-full border-2 border-purple-500/20 animate-ping-slow" />
               <div className="absolute w-[340px] h-[340px] rounded-full border-2 border-violet-500/30 animate-ping-slower" />
               <div className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-purple-500 animate-spin-slow opacity-50 blur-sm" />
@@ -227,7 +227,7 @@ export default function Banner() {
 
           <div className="pt-4">
             <a
-              href="/Manya_Kapoor_Resume.pdf"
+              href="https://drive.google.com/file/d/1eNGejjCbPd5esdhR_gmem9ibk6O9kubs/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 transition-all duration-300 text-white font-medium shadow-lg shadow-purple-900/30 hover:shadow-purple-900/50 hover:scale-105 group"

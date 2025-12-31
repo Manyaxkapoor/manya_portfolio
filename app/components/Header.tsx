@@ -93,22 +93,45 @@ export default function Header(): React.JSX.Element {
 
 
             {/* Desktop Nav */}
-            <ul className="hidden md:flex items-center gap-8 text-sm">
-              {sections.map((section) => (
-                <li key={section.id}>
-                  <Link
-                    href={`#${section.id}`}
-                    className={`transition-colors ${
-                      activeId === section.id
-                        ? "text-purple-400"
-                        : "text-white/80 hover:text-purple-300"
-                    }`}
-                  >
-                    {section.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+         <ul className="hidden md:flex items-center gap-6 text-sm">
+  {sections.map((section) => (
+    <li key={section.id}>
+      <Link
+        href={`#${section.id}`}
+        className={`
+          relative inline-block px-1 py-2
+          transition-all duration-300 ease-out
+          ${
+            activeId === section.id
+              ? "text-purple-400"
+              : "text-white/80 hover:text-white"
+          }
+          hover:-translate-y-[2px]
+        `}
+      >
+        {/* Glow layer */}
+        <span
+          className="
+            pointer-events-none absolute inset-0
+            bg-purple-500/30 blur-lg
+            opacity-0
+            transition-opacity duration-370
+            hover:opacity-100
+          "
+        />
+
+        {/* Text */}
+        <span className="relative z-10">
+          {section.label}
+        </span>
+      </Link>
+    </li>
+  ))}
+</ul>
+
+
+
+
 
             {/* Mobile Menu Button */}
             <button
