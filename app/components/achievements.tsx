@@ -74,14 +74,17 @@ export default function Leadership(): React.JSX.Element {
   }, []);
 
   return (
-    <section id="leadership" className="py-20 px-6">
+    <section
+      id="leadership"
+      className="py-16 md:py-20 px-4 md:px-6"
+    >
       <div ref={sectionRef} className="container mx-auto max-w-6xl">
 
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 md:mb-10 text-center md:text-left">
           Leadership & Achievements
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {leadership.map((item, index) => {
             const isVisible = visibleIds.includes(item.id);
             const tilt =
@@ -95,7 +98,7 @@ export default function Leadership(): React.JSX.Element {
                 data-id={item.id}
                 className={`
                   bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950
-                  border border-white/10 rounded-2xl p-6
+                  border border-white/10 rounded-2xl p-5 md:p-6
                   transition-all duration-500 ease-out
                   ${tilt} hover:-translate-y-2
                   hover:shadow-2xl hover:shadow-purple-900/30
@@ -105,20 +108,24 @@ export default function Leadership(): React.JSX.Element {
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex items-center gap-2">
                     <Icon type={item.icon} />
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-lg md:text-xl font-semibold text-white">
                       {item.title}
                     </h3>
                   </div>
 
                   {item.highlight && (
-                    <span className="shrink-0 px-3 py-1 text-xs font-semibold rounded-full
-                      bg-purple-500/15 text-purple-300 border border-purple-400/30">
+                    <span
+                      className="
+                        shrink-0 px-3 py-1 text-xs font-semibold rounded-full
+                        bg-purple-500/15 text-purple-300 border border-purple-400/30
+                      "
+                    >
                       {item.highlight}
                     </span>
                   )}
                 </div>
 
-                <p className="text-white/80 leading-relaxed">
+                <p className="text-sm md:text-base text-white/80 leading-relaxed">
                   {item.description}
                 </p>
               </div>
