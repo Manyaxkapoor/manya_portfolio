@@ -32,7 +32,7 @@ export default function Footer(): React.JSX.Element {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/14MwCzFSLdDpi7PW774fLn_g0SqvkIjOW/view?usp=sharing"
+              href="https://drive.google.com/file/d/12mOm9r_SNaXRwXZX2vRbQEq-LvlvLZSy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg
