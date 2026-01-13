@@ -38,6 +38,16 @@ const featuredProjects: Project[] = [
      imagePosition: "50% 50%",
   },
   {
+    id: 5,
+    title: "HireLens – Explainable Resume Screening Platform",
+    description:
+      "A full-stack resume screening platform focused on transparency in AI-driven hiring, featuring secure authentication, explainable decisions, and structured profile management.",
+    github: "https://github.com/Manyaxkapoor/HireLens",
+    image: "/projects/project-5.png",
+    imagePosition: "45% 60%",
+    tech: ["React", "Node.js", "PostgreSQL", "Explainable AI", "RBAC"],
+  },
+  {
     id: 3,
     title: "DevConnect — Full-Stack Portfolio Platform",
     description:
