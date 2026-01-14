@@ -43,6 +43,7 @@ const featuredProjects: Project[] = [
     description:
       "A full-stack resume screening platform focused on transparency in AI-driven hiring, featuring secure authentication, explainable decisions, and structured profile management.",
     github: "https://github.com/Manyaxkapoor/HireLens",
+    live: "https://hirelens-frontend-xx6r.onrender.com",
     image: "/projects/project-5.png",
     imagePosition: "45% 60%",
     tech: ["React", "Node.js", "PostgreSQL", "Explainable AI", "RBAC"],
